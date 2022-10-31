@@ -13,7 +13,7 @@ export default async ({ mode } = {}) => {
     ...config,
     entry: './src/index.tsx',
     output: {
-      filename: 'bundle.js',
+      filename: '[name].[hash].js',
       path: path.resolve(__dirname, 'build'),
       clean: true,
     },
